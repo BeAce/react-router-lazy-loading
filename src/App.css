@@ -1,8 +1,8 @@
 .header {
-  background-color: #000;
+  background-color: skyblue;
 }
 .navbar {
-  background-color: #000;
+  background-color: skyblue;
   display: flex;
   justify-content: space-between;
   align-items: center;

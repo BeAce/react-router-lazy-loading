@@ -8,10 +8,9 @@ class Home extends Component {
       <div className="container">
         <section className="section">
           <div className="container">
-            <h1 className="title">Lazy Loading</h1>
+            <h1 className="title">react router v4</h1>
             <h2 className="subtitle">
-              A simple app to demonstrate how lazy loading routes in React
-              works.
+              react router v4 lazy loading...
             </h2>
             <section className="bottom">
               <Button name="Go to About page" link="/about" />

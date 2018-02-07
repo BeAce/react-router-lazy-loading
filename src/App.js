@@ -4,7 +4,6 @@ import createBrowserHistory from "history/createBrowserHistory";
 import asyncComponent from './AsyncComponent';
 import "./App.css";
 const Home = asyncComponent(() => import('./containers/Home').then(module => module.default));
-const Maps = asyncComponent(() => import('./containers/Maps').then(module => module.default));
 const Blog = asyncComponent(() => import('./containers/Blog').then(module => module.default));
 const NotFound = asyncComponent(() => import('./containers/NotFound').then(module => module.default));
 
@@ -25,9 +24,6 @@ class App extends Component {
               </div>
 
               <div className="navbar-end">
-                <Link to="/maps">
-                  <span className="navbar-item">Maps</span>
-                </Link>
                 <Link to="/blog">
                   <span className="navbar-item">Blog</span>
                 </Link>
@@ -37,7 +33,6 @@ class App extends Component {
           <section className="content">
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/maps" component={Maps} />
               <Route path="/blog" component={Blog} />
               <Route path="*" component={NotFound} />
             </Switch>

@@ -2,18 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const button = {
-  backgroundColor: "white",
   padding: 10,
   color: "black",
-  borderRadius: 1,
-  borderColor: "black",
+  borderRadius: 2,
+  borderColor: "skyblue",
   borderWidth: 2,
-  borderStyle: "solid"
+  borderStyle: "solid",
+  color: "#333",
 };
 
 const Button = props => {
   return (
-    <Link to={props.link}>
+    <Link to={props.link} style={{ textDecoration: "none" }}>
       <span style={button}>{props.name}</span>
     </Link>
   );
